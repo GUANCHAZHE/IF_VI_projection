@@ -34,12 +34,7 @@ def find_chessboard(filename, pattern=(9, 8), wind_name="rgb"):
 
 
 if __name__ == '__main__':
-# 这个程序的目的就是对两个图像进行畸变矫正，
-# 可见光的分辨率是1920*1080，红外的分辨率是1280*960，
-# 然后找到两个相机的对应点，
-# 然后计算单应矩阵，
-# 将红外图像投影到可见光图像上。
-# 将可见光裁切成红外图像大小，
+
     idx = 1  # 0~71
     rgb_img = cv2.imread(f"RGB_{idx}.png")
     t_img = cv2.imread(f"IR_{idx}.png")

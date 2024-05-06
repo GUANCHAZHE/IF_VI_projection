@@ -53,6 +53,12 @@ intrinsic_rgb = np.array([[2.84693e+03, 0, 1.05265e+03],
 
 distortion_rgb = np.array([-0.460342, 0.306823, 0, 0, 0])
 
+intrinsic_ir = np.array([[2.90291e+03, 0, 6.56707e+02],
+[0, 2.89747e+03, 4.83656e+02],
+[0, 0, 1]])
+
+distortion_ir = np.array([-0.460342, 0.306823, 0, 0, 0])
+
 # 加载图像
 rgb_img = cv2.imread('RGB_1.png')
 ir_img = cv2.imread('IR_1.png', cv2.IMREAD_GRAYSCALE)
